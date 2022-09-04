@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Paint</title>
+</head>
+
+<body>
+    <div class="board"></div>
+
+    <div class="panel">
+        <form class="tool-choose">
+            <p class="form-text">Tool:</p>
+            <input type="radio" name="tool" id="pen" checked>
+            <label for="pen"><i class="fa-solid fa-pen icon"></i>Pen</label>
+            <input type="radio" name="tool" id="eraser" class="margin-left">
+            <label for="eraser"><i class="fa-solid fa-eraser icon"></i>Eraser</label>
+        </form>
+
+        <form class="color-choose">
+            <p class="form-text">Color:</p>
+            <input type="color" class="color">
+        </form>
+
+        <form class="size-choose">
+            <p class="form-text">Size:</p>
+            <input type="number" class="size" value="5" min="1">
+        </form>
+
+        <form class="shape-choose">
+            <p class="form-text">Shape:</p>
+            <input type="radio" name="size" id="square" checked>
+            <label for="square">
+                <div class="square icon"></div><span>Square</span>
+            </label>
+            <input type="radio" name="size" id="circle" class="margin-left">
+            <label for="circle">
+                <div class="square circle icon"></div><span>Circle</span>
+            </label>
+        </form>
+        <button class="clear button">Clear<i class="fa-regular fa-file icon"></i></button>
+        <button class="save button">Save<i class="fa-solid fa-download icon"></i></button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.4/html2canvas.min.js"></script>
+    <script src="paint.js"></script>
+</body>
+
+</html>
