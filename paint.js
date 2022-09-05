@@ -41,6 +41,10 @@ window.addEventListener('mousedown', active);
 window.addEventListener('mousemove', paint);
 window.addEventListener('mouseup', active);
 
+window.addEventListener('touchstart', active);
+window.addEventListener('touchmove', paint);
+window.addEventListener('touchend', active);
+
 clearBtn.addEventListener('click', clear);
 
 
